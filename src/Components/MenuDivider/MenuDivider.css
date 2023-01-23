@@ -1,0 +1,24 @@
+.menu-divider-container {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divider-top {
+    background-color: rgb(62, 62, 62);
+    height: 15px;
+    margin-bottom: auto;
+}
+
+.divider-middle {
+    color: white;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    height: 100%;
+}
+
+.divider-bottom {
+    background-color: rgb(62, 62, 62);
+    height: 15px;
+    margin-top: auto;
+}

@@ -1,0 +1,25 @@
+.checkout-container {
+    margin-top: 200px;
+    padding: 10px;
+    display: flex;
+}
+
+.checkout-content-container {
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px grey;
+}
+.checkout-content-container > h1 {
+    margin: 0 auto 0 auto;
+}
+
+.checkout-stepper {
+    width: 400px;
+    margin: 20px auto 0 auto;
+}

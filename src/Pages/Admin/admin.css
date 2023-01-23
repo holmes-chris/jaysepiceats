@@ -1,0 +1,29 @@
+.admin-content-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 360px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px grey;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(184, 0, 0);
+    border: none;
+    margin: 60px auto;
+    cursor: pointer;
+}
+
+.admin-container {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+}

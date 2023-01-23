@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    list-style: none;
+}
+
+main  {
+    background-color: rgb(255, 255, 255);
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.closed-messgae-container {
+    margin: 100px auto 100px auto;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+}
+
+.closed-messgae-container > h1 {
+    font-size: 25px;
+    margin: auto;
+}
+
+
+.header {
+    margin-top: 90px;
+    height: 400px;
+    /* background-image: linear-gradient(to right, rgb(60, 60, 60), rgb(33, 33, 33)); */
+    background-image: radial-gradient(circle, rgb(31, 31, 31), rgb(34, 34, 34), rgb(41, 41, 41), rgb(52, 52, 52));
+
+}
+

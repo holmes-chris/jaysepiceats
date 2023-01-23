@@ -1,0 +1,43 @@
+.hero-image {
+    margin: 90px 0 0 0;
+    background-image: url("../../images/heroImage.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    filter: brightness(30%);
+    display: flex;
+}
+
+.hero-title {
+    color: white;
+    font-size: calc(.12 * 100vw);
+    font-family: 'Rum Raisin', sans-serif;
+    z-index: 1;
+    position: absolute;
+    top: 34%;
+    left: 16%;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 110px;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-title {
+        font-size: 80px;
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hero-container {
+        display: none;
+    }
+
+}

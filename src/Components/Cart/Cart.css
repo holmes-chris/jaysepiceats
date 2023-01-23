@@ -1,0 +1,243 @@
+
+.cart-content-wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cart-header {
+    margin: 10px auto;
+    font-size: 25px;
+    color: grey;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.cart-container {
+    background-color: rgb(230, 230, 230);
+    width: 80%;
+    height: 700px;
+    margin: 150px auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.cart-outer-container {
+    width: 90%;
+    margin: auto;
+    height: 370px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.cart-item-wrapper {
+    display: flex;
+    width: 90%;
+    height: 80px;
+    margin: auto auto 5px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.cart-item-details {
+    display: flex;
+    width: 100%;
+}
+.cart-image-wrapper {
+    width: 53%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.detail-text > h5 {
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+.detail-text {
+    position: relative;
+    right: 25%;
+}
+
+.cart-item-image {
+    width: 100px;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+}
+
+.cart-actions > button {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    /* margin: 5px 5px 10px 5px; */
+    margin-top: 20px;
+
+}
+
+.cart-actions {
+    background-color: rgb(235, 235, 235);
+    border-radius: 0 10px 10px 0;
+    width: 20%;
+    position: relative;
+    margin-left: auto;
+    display: flex;
+
+    /* flex-direction: column; */
+}
+
+.subtotal-container {
+    background-color: rgb(255, 255, 255);
+    height: 220px;
+    width: 50%;
+    margin: 30px auto;
+    padding-top: 20px;
+    border-radius: 20px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtotal-container > h3 {
+    margin: 20px auto;
+    font-weight: 400;
+}
+
+
+.checkout-bttn-closed {
+    background-color: grey;
+    color: rgb(175, 175, 175);
+    margin: auto;
+}
+
+.checkout-bttn-open {
+    margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .cart-content-wrapper {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .cart-header {
+        margin: 10px auto;
+        font-size: 25px;
+        color: grey;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    .cart-container {
+        background-color: rgb(230, 230, 230);
+        width: 80%;
+        height: 700px;
+        margin: 150px auto;
+        border-radius: 10px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+    }
+
+    .detail-text {
+        position: relative;
+        right: 45%;
+    }
+
+    .cart-outer-container {
+        width: 90%;
+        margin: auto;
+        height: 370px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        overflow-y: scroll;
+    }
+
+    .cart-item-wrapper {
+        display: flex;
+        width: 90%;
+        height: 80px;
+        margin: auto auto 5px auto;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    .cart-item-details {
+        display: flex;
+        width: 100%;
+    }
+    .cart-image-wrapper {
+        width: 53%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    .detail-text > h5 {
+        font-size: 13px;
+        margin-left: 5px;
+        font-weight: 300;
+    }
+
+    .cart-item-image {
+        width: 100px;
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+        display: none;
+    }
+
+    .cart-actions > button {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        /* margin: 5px 5px 10px 5px; */
+        margin: 10px 0 0 16px;
+
+    }
+
+    .cart-actions {
+        background-color: rgb(235, 235, 235);
+        border-radius: 0 10px 10px 0;
+        width: 20%;
+        position: relative;
+        margin-left: auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtotal-container {
+        background-color: rgb(255, 255, 255);
+        height: 220px;
+        width: 90%;
+        margin: 30px auto;
+        padding-top: 20px;
+        border-radius: 20px;
+        color: grey;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtotal-container > h3 {
+        margin: 20px auto;
+        font-weight: 400;
+    }
+
+
+    .checkout-bttn-closed {
+        background-color: grey;
+        color: rgb(175, 175, 175);
+        margin: auto;
+    }
+
+    .checkout-bttn-open {
+        margin: auto;
+    }
+}
