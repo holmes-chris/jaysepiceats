@@ -22,3 +22,9 @@
     height: 15px;
     margin-top: auto;
 }
+
+@media (max-width: 425px) {
+    .menu-divider-container {
+        margin-top: 80px;
+    }
+}

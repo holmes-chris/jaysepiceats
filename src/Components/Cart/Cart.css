@@ -1,3 +1,12 @@
+.empty-cart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cart-header-status {
+    margin: auto;
+}
 
 .cart-content-wrapper {
     max-width: 1000px;
@@ -73,9 +82,7 @@
     width: 20px;
     height: 20px;
     font-size: 12px;
-    /* margin: 5px 5px 10px 5px; */
     margin-top: 20px;
-
 }
 
 .cart-actions {
@@ -85,8 +92,6 @@
     position: relative;
     margin-left: auto;
     display: flex;
-
-    /* flex-direction: column; */
 }
 
 .subtotal-container {
@@ -176,8 +181,7 @@
     .cart-image-wrapper {
         width: 53%;
         height: 100%;
-        overflow: hidden;
-        
+        overflow: hidden; 
     }
 
     .detail-text > h5 {
@@ -208,7 +212,6 @@
         width: 20%;
         position: relative;
         margin-left: auto;
-
         display: flex;
         flex-direction: column;
     }

@@ -56,7 +56,7 @@ function Form() {
 
 //this function renders after the checkout. Content is dependent upon success/failure
 let Confirmation = () => order.customer ? (   
-        <div className="confirmation-page-container">
+        <div className="confirmation-page-container" style={{maxWidth: "90%"}}>
             {error ? (
                 <div style={{display: "flex", flexDirection: "column"}}>
                     <h4 style={{margin: "30px auto 0 auto"}}>Error: {error}</h4>
@@ -65,7 +65,7 @@ let Confirmation = () => order.customer ? (
                 </div>
             ) : (
             <div style={{display: "flex", flexDirection: "column", height: "500px", marginTop: "20px"}} className="confirmation-page-content">
-                <h3 style={{fontWeight: 400, margin: "90px auto 0 auto"}}>{`Thank you for your purchase, ${contactData.firstName} ${contactData.lastName}!`}</h3>
+                <h3 style={{fontWeight: 400, width: "80%", margin: "90px auto 0 auto", alignItems: "center"}}>{`Thank you for your purchase, ${contactData.firstName} ${contactData.lastName}!`}</h3>
                 <h4 style={{margin: "10px auto 0 auto", fontWeight: 300,}}>Order ref: {order.customer_reference}</h4>
                 <Button sx={{margin: "70px auto 0 auto", width: "150px", padding: "10px", backgroundColor: "red"}} component={Link} to="/" variant="contained">BACK TO HOME</Button>
             </div>)}

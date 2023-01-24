@@ -9,6 +9,7 @@ import FormInput from "../Checkout/FormInput.js"
 function ContactForm({ checkoutToken, next}) {
 
   const methods = useForm();
+  
 
   return (
     <div className="contact-form-container">
@@ -23,9 +24,13 @@ function ContactForm({ checkoutToken, next}) {
             <FormInput required name="carColor" label="Car Color" />
           </Grid>
           <br />
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Button component={Link} to="/cart" sx={{backgroundColor: "red"}} variant="contained">BACK TO CART</Button>
-            <Button type="submit" sx={{backgroundColor: "red"}} variant="contained">NEXT</Button>
+          <div className="checkout-bttns" style={{ display: "flex", justifyContent: "space-between" }}>
+            <Link style={{textDecoration: "none"}} to="/cart">
+              <button className="back-to-cart-bttn" variant="contained">
+                BACK TO CART
+              </button>
+            </Link>
+            <button className="next-bttn" type="submit" sx={{backgroundColor: "red"}} variant="contained">NEXT</button>
           </div>
         </form>
       </FormProvider>

@@ -39,8 +39,12 @@
     border-radius: 5px;
     font-size: 18px;
     margin: auto;
+    height: 60px;
 }
 
+.customize-bttn-text2 {
+    font-size: 8px;
+}
 
 
 .product-card {

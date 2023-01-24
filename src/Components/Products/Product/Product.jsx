@@ -26,7 +26,10 @@ function Product({ product, onAddToCart }) {
         <div className="card-actions">
             {product.customizations ? 
             <Tooltip title="The customize button will take you to a single product page with custom options (currently being developed)" placement="bottom">
-                <button className="customize-bttn">CUSTOMIZE</button>
+                <button className="customize-bttn">
+                    <p>CUSTOMIZE</p>
+                    <p className="customize-bttn-text2">(currently not available)</p>
+                </button>
             </Tooltip>
              : <button className="add-to-cart-bttn" onClick={() => onAddToCart(product.id, 1)}>ADD TO CART</button>}
         </div>

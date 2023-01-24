@@ -41,6 +41,7 @@ function PaymentForm({checkoutToken, backStep, onCaptureCheckout, nextStep, cont
       }
       //final capture of the order
       onCaptureCheckout(checkoutToken.id, orderData);
+      console.log(orderData)
       nextStep();
     }
   }
@@ -58,7 +59,7 @@ function PaymentForm({checkoutToken, backStep, onCaptureCheckout, nextStep, cont
               <br /> <br />
               <div style={{display: "flex"}}>
                 <Button className="back-to-contact-form-bttn" onClick={backStep}>BACK</Button>
-                <Button className="stripe-pay-bttn" type="submit" disabled={!stripe}>
+                <Button className="stripe-pay-bttn" type="submit" variant="contained" disabled={!stripe}>
                   PAY { checkoutToken.subtotal.formatted_with_symbol }
                 </Button>
               </div>

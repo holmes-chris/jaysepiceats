@@ -4,7 +4,6 @@ import Products from "./Components/Products/Products";
 import "./Components/Loader/Loader.css"
 import Navbar from "./Components/Navbar/Navbar.js";
 import Cart from "./Components/Cart/Cart.jsx";
-// import Loader from "./Components/Loader/Loader.js"
 import ClosedStore from "./Components/ClosedStore.js";
 import Contact from "./Pages/Contact/Contact.js";
 import About from "./Pages/About/About.js";
