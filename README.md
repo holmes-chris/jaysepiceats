@@ -45,4 +45,3 @@ Once Jay's Epic Eats is running, you can click on any food item button that read
 
 When you get to the payment section, you may test the transaction using Stripe's default Credit Card Number (4242 4242 4242 4242). Any future credit card expiration date and CVC will work.
 
-# jaysepiceats
