@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Elements, CardElement, ElementsConsumer } from "@stripe/react-stripe-js";
 import { Button } from "@mui/material"
 import { loadStripe } from "@stripe/stripe-js";
@@ -9,7 +9,9 @@ import "./paymentForm.css"
 const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`);
 
 function PaymentForm({checkoutToken, backStep, onCaptureCheckout, nextStep, contactData }) {
-  const handleSubmit = async (e, elements, stripe) => {
+
+  
+  const handleSubmit = async (e, elements, stripe, order) => {
     e.preventDefault();
     if (!stripe || !elements) return;
     const cardElement = elements.getElement(CardElement);
@@ -41,7 +43,6 @@ function PaymentForm({checkoutToken, backStep, onCaptureCheckout, nextStep, cont
       }
       //final capture of the order
       onCaptureCheckout(checkoutToken.id, orderData);
-      console.log(orderData)
       nextStep();
     }
   }

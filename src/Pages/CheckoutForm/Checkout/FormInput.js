@@ -2,7 +2,7 @@ import React from 'react';
 import { TextField, Grid } from "@mui/material";
 import { useFormContext, Controller } from "react-hook-form";
 
-function FormInput({name, label, required}) {
+function FormInput({name, label, required, type}) {
     const { control } = useFormContext();
     return (
         <Grid sx={{maxWidth: "100%"}} item xs={12} sm={6}>
@@ -15,6 +15,7 @@ function FormInput({name, label, required}) {
                 {...field}
                 name={name}
                 label={label}
+                type={type}
                 required={required}
                 fullWidth
               />

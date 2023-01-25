@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Products from "./Components/Products/Products";
 import "./Components/Loader/Loader.css"
 import Navbar from "./Components/Navbar/Navbar.js";
 import Cart from "./Components/Cart/Cart.jsx";
-import ClosedStore from "./Components/ClosedStore.js";
 import Contact from "./Pages/Contact/Contact.js";
 import About from "./Pages/About/About.js";
 import Login from "./Pages/Login/Login.js";
@@ -13,6 +12,8 @@ import Checkout from "./Pages/CheckoutForm/Checkout/Checkout.js"
 import { commerce } from "./lib/commerce.js";
 import {customizations} from "./lib/customizations.js"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import emailjs from '@emailjs/browser';
+
 
 function App() {
 
@@ -76,6 +77,7 @@ function App() {
     setLoading(false)
   }
 
+
   //this function captures the checkout info and resets the cart
   //takes in the checkoutTokenId and the order object generated during checkout
   const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
@@ -83,6 +85,7 @@ function App() {
     try {
       const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
       setOrder(incomingOrder);
+      // sendEmail();
       refreshCart();
     setLoading(false)
     } catch (error) {

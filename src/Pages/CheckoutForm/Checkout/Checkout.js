@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {Stepper, Step, StepLabel, CircularProgress , Button, CssBaseline } from "@mui/material";
+
 import { commerce } from "../../../lib/commerce";
 import { Link, useNavigate } from "react-router-dom";
 import "./checkout.css";
@@ -42,15 +43,17 @@ function backStep() {
 //this function is the "final next button" used to set the contact details and move to the next step.
 function next(data) {
     setContactData(data)
+    console.log(contactData)
     nextStep();
     
 }
 
+
 function Form() {
     if (activeStep === 0) {
-        return (<ContactForm checkoutToken={checkoutToken} next={next}/>)
+        return (<ContactForm checkoutToken={checkoutToken} order={order} next={next}/>)
     } else 
-        return (<PaymentForm contactData={contactData} checkoutToken={checkoutToken} backStep={backStep} onCaptureCheckout={onCaptureCheckout} nextStep={nextStep}/>)
+        return (<PaymentForm order={order} contactData={contactData} checkoutToken={checkoutToken} backStep={backStep} onCaptureCheckout={onCaptureCheckout} nextStep={nextStep}/>)
 }
 
 

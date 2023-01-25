@@ -3,6 +3,7 @@
     padding: 10px;
     display: flex;
     width: 800px;
+    max-height: calc(100vh - 100px);
 }
 
 .checkout-content-container {

@@ -29,14 +29,14 @@ function handleClick() {
   return (
     <div>
         <nav className="navbar-container">
-            <a className="nav-logo-div">
+            <Link to="/" style={{textDecoration: "none"}} className="nav-logo-div">
                 <img src={StoreLogo} className="nav-logo" />
                 <div className="nav-title">
                     <h4>JAY'S</h4>
                     <h4>EPIC</h4>
                     <h4>EATS</h4>
                 </div>
-            </a>
+            </Link>
             <div className="menu-icon" onClick={handleClick}>
                 <i className={clicked ? "fas fa-times" : "fas fa-bars"}>
                     {clicked ? <FaTimes /> : <FaBars />}
